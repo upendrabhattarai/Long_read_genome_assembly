@@ -9,6 +9,7 @@ Workflow
 6. Genome assembler
 
     6.1 Flye
+    
     6.2 Canu
 
 
