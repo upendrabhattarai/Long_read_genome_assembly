@@ -7,12 +7,9 @@ Workflow
 4. Removing adapters (Porechop)
 5. Quality check (nanoQC)
 6. Genome assembler
-
-    6.1 Flye
-    
-    6.2 Canu
-    
-    6.3 Redbean
+    - Flye
+    - Canu
+    - Redbean
 7. Assembly polishing with Racon
 
 
