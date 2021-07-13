@@ -120,5 +120,19 @@ sbatch racon.5ite.sl
 ```
 
 
+## 8. Polishing with Medaka
+Medaka installation with conda is easier, we can just follow the steps in this [link](https://nanoporetech.github.io/medaka/installation.html)
+And run medaka for each of 5 iterations of racon output
+[Script](medaka.sl)
+
+```
+sbatch medaka.sl
+```
+## 9. Polishing with nanopolish
+We can also use nanopolish to polish the assembly.
+
+
+
+
 
 
