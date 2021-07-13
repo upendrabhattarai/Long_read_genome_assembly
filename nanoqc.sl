@@ -5,8 +5,8 @@
 #SBATCH --ntasks 10
 #SBATCH --partition=large
 #SBATCH --job-name nanoqc
-#SBATCH --mem=50G
-#SBATCH --time=02:00:00
+#SBATCH --mem=3G
+#SBATCH --time=01:00:00
 #SBATCH --account=uoo02752
 #SBATCH --output=%x.%j.out
 #SBATCH --error=%x.%j.err
