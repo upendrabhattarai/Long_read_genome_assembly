@@ -5,7 +5,7 @@
 #SBATCH --ntasks 10
 #SBATCH --partition=large
 #SBATCH --job-name pycoqc
-#SBATCH --mem=50G
+#SBATCH --mem=2G
 #SBATCH --time=00:20:00
 #SBATCH --account=uoo02752
 #SBATCH --output=%x.%j.out
