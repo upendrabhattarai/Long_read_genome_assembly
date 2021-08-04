@@ -11,6 +11,10 @@ Workflow
     - Canu
     - Redbean
 7. Assembly polishing with Racon
+8. Polishing with Medaka
+9. Polishing with nanopolish
+10. Scaffolding with long reads using lrscaff
+11. Gapclosing with lrgapcloser
 
 
 
@@ -129,10 +133,12 @@ And run medaka for each of 5 iterations of racon output
 sbatch medaka.sl
 ```
 ## 9. Polishing with nanopolish
-We can also use nanopolish to polish the assembly.
+We can also use nanopolish to polish the assembly. [Script](nanopolish.sl)
+We will compare outputs from all the polishing steps using quast and whichever has better assembly stats, we will choose that assembly to process forward with scaffolding
 
+## 10. Scaffolding with long reads using lrscaff
+We will use lrscaff to scaffold the genome using long reads [Script](lrscaff.sl)
+We will run scaffolding for 5 iterations and compare output from each and select the one with better stats for gapclosing
 
-
-
-
-
+## 11. Gapclosing with lrgapcloser
+This [Script](lrgapcloser.sl) will run lrgapcloser for 15 iterations using long reads. We will again run quast to compare output from each iteratioins and select the one with best stats.
