@@ -15,6 +15,8 @@ Workflow
 9. Polishing with nanopolish
 10. Scaffolding with long reads using lrscaff
 11. Gapclosing with lrgapcloser
+12. Polishing the assembly with RNA-seq data
+13. Purgehaplotigs
 
 
 
@@ -142,3 +144,10 @@ We will run scaffolding for 5 iterations and compare output from each and select
 
 ## 11. Gapclosing with lrgapcloser
 This [Script](lrgapcloser.sl) will run lrgapcloser for 15 iterations using long reads. We will again run quast to compare output from each iteratioins and select the one with best stats.
+
+## 12. Polishing the assembly with RNA-seq data
+We will use pilon to polish our assembly with RNA-seq data we have, if you have short read data for your genome, you would want to use that instead of RNA-seq data. but as I don't have short read data for my genome. I am using RNA-seq data we will run it in 3 iterations and check which one is the best.
+[script](pilon_rnaseq_polish.sl)
+
+## 13. Purgehaplotigs
+We will use purgehaplotigs to remove redundant contigs. [Script](purgehaplotigs.sl)
