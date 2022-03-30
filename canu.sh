@@ -3,7 +3,6 @@
 #SBATCH --nodes 1
 #SBATCH --cpus-per-task 1
 #SBATCH --ntasks 10
-#SBATCH --partition=bigmem
 #SBATCH --job-name canu
 #SBATCH --mem=100G
 #SBATCH --time=72:00:00
