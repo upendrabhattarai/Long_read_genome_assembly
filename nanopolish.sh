@@ -3,7 +3,6 @@
 #SBATCH --nodes 1
 #SBATCH --cpus-per-task 1
 #SBATCH --ntasks 30
-#SBATCH --partition=bigmem
 #SBATCH --job-name nanopolishNem
 #SBATCH --mem=10G
 #SBATCH --time=7-00:00:00
