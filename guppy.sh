@@ -13,5 +13,9 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=bhaup057@student.otago.ac.nz
 
+
+#Instructions on running guppy-gpu on NeSI Mahuika cluster :https://support.nesi.org.nz/hc/en-gb/articles/4546820344079-ont-guppy-gpu
+module purge
 module load ont-guppy-gpu/5.0.7
+
 guppy_basecaller -i path/to/fast5/files -s ./ --flowcell FLO-MIN106 --kit SQK-LSK109 --num_callers 4 -x auto --recursive --trim_barcodes --disable_qscore_filtering
