@@ -13,10 +13,11 @@
 #SBATCH --mail-user=bhaup057@student.otago.ac.nz
 #SBATCH --hint=nomultithread
 
+#nanopolish will load Python/3.8.2 which is a built in dependency 
 module load nanopolish/0.13.2-gimkl-2020a
 module load SAMtools/1.12-GCC-9.2.0
 module load minimap2/2.20-GCC-9.2.0
-module load Python/3.9.5-gimkl-2020a
+
 
 nanopolish index -d /nesi/nobackup/uoo02752/nematode/nematode_nanopore/0.all_fast5/fast5.files basecalled.fastq
 minimap2 -ax map-ont -t 10 assembly.fasta basecalled.fastq | samtools sort -o basecalled.sorted.bam -T reads.tmp
