@@ -14,8 +14,8 @@
 #SBATCH --mail-user=bhaup057@student.otago.ac.nz
 #SBATCH --hint=nomultithread
 
-module load Racon
-module load minimap2
+module load Racon/1.4.21-GCC-9.2.0-CUDA-11.2.0-hybrid
+module load minimap2/2.24-GCC-9.2.0
 
 #======> Correction 1 X Racon
 minimap2 -t 10 assembly.fasta m.neg_ont_nanolyse_porechop.fastq > m.neg.flye.gfa1.paf
