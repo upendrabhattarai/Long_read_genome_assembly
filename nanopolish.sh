@@ -24,5 +24,5 @@ nanopolish index -d /nesi/nobackup/uoo02752/nematode/nematode_nanopore/0.all_fas
 minimap2 -ax map-ont -t 10 assembly.fasta basecalled.fastq | samtools sort -o basecalled.sorted.bam -T reads.tmp
 samtools index basecalled.sorted.bam  
 
-python3 /scale_wlg_persistent/filesets/opt_nesi/CS400_centos7_bdw/nanopolish/0.13.2-gimkl-2020a/scripts/nanopolish_makerange.py assembly.fasta | parallel --results nanopolish.results -P 1 \
+nanopolish_makerange.py assembly.fasta | parallel --results nanopolish.results -P 1 \
 nanopolish variants --consensus -o polished.{1}.vcf -w {1} -r basecalled.fastq -b basecalled.sorted.bam -g assembly.fasta -t 30 --min-candidate-frequency 0.1
