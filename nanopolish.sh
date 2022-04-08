@@ -14,7 +14,8 @@
 #SBATCH --hint=nomultithread
 
 #nanopolish will load Python/3.8.2 which is a built in dependency 
-module load nanopolish/0.13.2-gimkl-2020a
+module purge
+module load nanopolish/0.13.3-gimkl-2020a-Python-3.9.9
 module load SAMtools/1.12-GCC-9.2.0
 module load minimap2/2.20-GCC-9.2.0
 
